@@ -1,5 +1,16 @@
 # LLM Tweet Analysis
 
+Note:
+This project is currently under development and adopts two distinct approaches:
+  1. Main Branch Approach:
+      
+     The primary approach, implemented in the main branch, leverages SQLAlchemy for database management, Pydantic for data validation, and a Large Language Model      (LLM) for sentiment analysis. The objective is to gain insights into public sentiment during critical events. The overall code architecture relies on the LLM (instructor client) to analyze tweets and classify them into three categories: Political, Offensive, and Neutral.
+
+  2. Secondary Approach:
+     
+     The second approach will be maintained in a separate branch (name to be determined). This method depends on keywords extracted from tweets stored in the database. It employs a rule-based LLMClassifier to process tweets, without direct reliance on an LLM client.
+
+
 ## Project Overview
 This project is designed to analyze tweets stored in a PostgreSQL database and classify them into three categories: `Political`, `Offensive`, or `Neutral`. It uses:
 - **SQLAlchemy** for ORM and database management.
@@ -12,7 +23,29 @@ The project implements a hybrid classification system using keywords stored in a
 ---
 
 ## Directory Structure
-```plaintext
+First Approach (Main Branch)
+``` 
+tweet_analysis_project/
+│
+├── app/
+│ ├── init.py
+│ ├── config.py
+│ ├── database.py
+│ ├── models.py
+│ ├── schemas.py
+│ ├── services.py
+│ └── main.py
+│
+├── migrations/
+│ └── versions/
+│ └── <timestamp>_create_tweets_table.py
+│
+├── requirements.txt
+├── README.md
+└── .env
+
+Second Approach (Second Branch)
+
 llm_tweet_analysis/
 |-- main.py                    # Entry point of the application
 |-- models/
