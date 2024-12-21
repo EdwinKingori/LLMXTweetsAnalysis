@@ -1,0 +1,19 @@
+#Ignoring cache_related files
+__pycache__
+*.pyc
+*.pyo
+
+#logs
+*.logs
+logs/
+
+
+#ignoring the virtual environment
+venv/
+
+#ignoring the environment variables
+.env
+
+#ignore text and csv files
+code.txt
+tweets.csv   
