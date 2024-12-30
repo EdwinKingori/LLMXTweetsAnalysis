@@ -6,5 +6,6 @@ class Tweet(Base):
     __tablename__ = "tweets"
 
     id = Column(Integer, primary_key=True)
-    text = Column(String, nullable=False)
+    username = Column(String, nullable=False)
+    x_tweets = Column(String, nullable=False)
     created_at = Column(Date, nullable=False)
