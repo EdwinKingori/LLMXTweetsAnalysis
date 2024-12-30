@@ -97,7 +97,7 @@ Ensure `keywords.xlsx` is present in the root directory with the following struc
 
 ### 5. Run the Application
 ```bash
-python main.py
+python3 -m app.main
 ```
 
 ---
@@ -132,16 +132,13 @@ Centralizes configuration such as database URL and file paths.
 ## Future Enhancements
 - **Integrate OpenAI API**: Replace the mock LLM client with a live API integration for advanced classification.
 - **Web Interface**: Add a FastAPI-based web service for real-time tweet classification.
-- **Improved Keyword Management**: Develop a GUI tool for managing the Excel file.
+- **Improved Keyword Management**: Develop a GUI tool for managing the Excel/CSV DB file.
 
 ---
 
 ## Contributing
 Feel free to fork this repository and submit pull requests. Contributions are welcome!
 
----
 
-## License
-This project is licensed under the MIT License. See `LICENSE` for details.
 
 
